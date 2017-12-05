@@ -22,12 +22,12 @@ function toggleHeatmap() {
             b = confirm("Warning: Viewing data distribution can significantly hinder interactivity! View anyway?");
             if (b) {
                 heatmap.setMap(heatmap.getMap() ? null : map);
-                
+
             }
         } else {
             //confirmed is true
             heatmap.setMap(heatmap.getMap() ? null : map);
-            
+
         }
 
     } else {
@@ -52,12 +52,12 @@ function toggleTripLines() {
 
 }
 var MAXSPEED;
-function getMaxSpeed(){
-    return new Promise((resolve,reject)=>{
-      $.get("./maxspeed", function (d) {
-        console.log("I got: ", d);
-        resolve(d.speed);
-          MAXSPEED = d.speed;
+function getMaxSpeed() {
+    return new Promise((resolve, reject) => {
+        $.get("./maxspeed", function (d) {
+            console.log("I got: ", d);
+            resolve(d.speed);
+            MAXSPEED = d.speed;
         });
     });
 }
@@ -250,7 +250,7 @@ function mkCircle(pos, map, size, marker) {
     // } );
     marker.circle = circ;
 
-    
+
     circ.trig = function (ev) {
         console.log("radius change:", ev);
         marker.infowindow.setMap(null);
@@ -260,7 +260,7 @@ function mkCircle(pos, map, size, marker) {
             //marker.position = {lat : d.queriedLocation.lat, lng : d.queriedLocation.lng };
             marker.infowindow = null;
             marker.infowindow = mkInfoWindowWithResponse(d);
-            let col = getColor(0,d.aveSpeed, MAXSPEED);
+            let col = getColor(0, d.aveSpeed, MAXSPEED);
             marker.circle.setOptions({
                 fillColor: col,
                 strokeColor: col
@@ -285,10 +285,10 @@ function querySegments(mn, mx) {
     console.log("about toquery here is type of fist arg")
     console.log(typeof mn)
     console.log(mn)
-    if(mn == ""){
+    if (mn == "") {
         mn = "-1";
     }
-    if(mx == ""){
+    if (mx == "") {
         mx = "-1";
     }
     return new Promise((resolve, reject) => {
@@ -324,10 +324,10 @@ function queryLocation(lat, lng, within) {
     return my;
 }
 function mkPolyLine(coords, color, strokeWeight) {
-    if(color == null){
+    if (color == null) {
         color = '#000000';
     }
-    if(strokeWeight == null){
+    if (strokeWeight == null) {
         strokeWeight = 2
     }
     return new google.maps.Polyline({
@@ -340,77 +340,89 @@ function mkPolyLine(coords, color, strokeWeight) {
 
 }
 
-function pathlistener(dat){
-        console.log(dat)
-        console.log(dat.latLng.lat());
-        console.log(dat.latLng.lng());
-        var size = 20
-        let p = queryLocation(dat.latLng.lat(), dat.latLng.lng(), size);
-        let handler = (wellBool, d) => {
-            var infowindow = wellBool ? mkInfoWindowWithResponse(d) : mkInfoWindowWithStr(noDatStr);
+function pathlistener(dat) {
+    console.log(dat)
+    console.log(dat.latLng.lat());
+    console.log(dat.latLng.lng());
+    var size = 20
+    let p = queryLocation(dat.latLng.lat(), dat.latLng.lng(), size);
+    let handler = (wellBool, d) => {
+        var infowindow = wellBool ? mkInfoWindowWithResponse(d) : mkInfoWindowWithStr(noDatStr);
 
-            var marker = new google.maps.Marker({
-                draggable: true,
-                position: { lat: dat.latLng.lat(), lng: dat.latLng.lng() }, //{ lat: d.queriedLocation.lat, lng: d.queriedLocation.lng },//
-                map: map
-                //,title: wellBool ? mkString(d, false) : noDatStr
-            });
-            infowindow.open(map, marker);
+        var marker = new google.maps.Marker({
+            draggable: true,
+            position: { lat: dat.latLng.lat(), lng: dat.latLng.lng() }, //{ lat: d.queriedLocation.lat, lng: d.queriedLocation.lng },//
+            map: map
+            //,title: wellBool ? mkString(d, false) : noDatStr
+        });
+        infowindow.open(map, marker);
 
-            let circ = mkCircle(dat.latLng, map, size, marker);
-            let col = getColor(0,d.aveSpeed, MAXSPEED);
-            circ.setOptions({
-                fillColor: col,
-                strokeColor: col
-            });
-            marker.infowindow = infowindow;
-            marker.addListener('mousedown', function (dart) {
-                console.log("Mouse down data: ", dart);
-                console.log(dart.Aa.which)
-                if (dart.Aa.which == 3) {
-                    marker.circle.setMap(null)
-                    marker.infowindow.setMap(null)
-                    marker.setMap(null);
-                    marker = null;
+        let circ = mkCircle(dat.latLng, map, size, marker);
+        let col = getColor(0, d.aveSpeed, MAXSPEED);
+        circ.setOptions({
+            fillColor: col,
+            strokeColor: col
+        });
+        marker.infowindow = infowindow;
+        marker.addListener('mousedown', function (dart) {
+
+            console.log("Mouse down data: ", dart);
+            try {
+                for (prop in dart) {
+                    if (dart[prop] instanceof MouseEvent) {
+                        console.log(dart[prop].which)
+                        if (dart[prop].which == 3) {
+                            marker.circle.setMap(null)
+                            marker.infowindow.setMap(null)
+                            marker.setMap(null);
+                            marker = null;
+                        }
+                        return;
+
+                    }
                 }
-            });
 
-            marker.recalc = function (dat) {
-                //-----------------------------------------------------
-                marker.circle.setMap(null)
-                marker.infowindow.setMap(null);
-
-                mkCircle(marker.position, map, marker.circle.radius, marker);
-                //clear the infoWindow;
-                let p2 = queryLocation(dat.latLng.lat(), dat.latLng.lng(), marker.circle.radius);
-                let f2 = (wellBool, d) => {
-                    console.log("mouseup event: I got: ", d);
-                    infowindow = wellBool ? mkInfoWindowWithResponse(d) : mkInfoWindowWithStr(noDatStr);
-                    infowindow.open(map, marker)
-                    marker.infowindow = infowindow
-                    let col = getColor(0,d.aveSpeed, MAXSPEED);
-                    marker.circle.setOptions({
-                        fillColor: col,
-                        strokeColor: col
-                    });
-                }
-                p2.then(d => {
-                    return f2(true, d);
-                }).catch(d => {
-                    return f2(false, d);
-                })
+            } catch (e) {
+                console.log(e)
             }
-            marker.addListener('poition_changed', marker.recalc);
-            marker.addListener('mouseup', marker.recalc );
-            
+        });
 
+        marker.recalc = function (dat) {
+            //-----------------------------------------------------
+            marker.circle.setMap(null)
+            marker.infowindow.setMap(null);
 
+            mkCircle(marker.position, map, marker.circle.radius, marker);
+            //clear the infoWindow;
+            let p2 = queryLocation(dat.latLng.lat(), dat.latLng.lng(), marker.circle.radius);
+            let f2 = (wellBool, d) => {
+                console.log("mouseup event: I got: ", d);
+                infowindow = wellBool ? mkInfoWindowWithResponse(d) : mkInfoWindowWithStr(noDatStr);
+                infowindow.open(map, marker)
+                marker.infowindow = infowindow
+                let col = getColor(0, d.aveSpeed, MAXSPEED);
+                marker.circle.setOptions({
+                    fillColor: col,
+                    strokeColor: col
+                });
+            }
+            p2.then(d => {
+                return f2(true, d);
+            }).catch(d => {
+                return f2(false, d);
+            })
         }
-        p.then(d => {
-            return handler(true, d);
-        }).catch(d => {
-            return handler(false, d);
-        })
+        marker.addListener('poition_changed', marker.recalc);
+        marker.addListener('mouseup', marker.recalc);
+
+
+
+    }
+    p.then(d => {
+        return handler(true, d);
+    }).catch(d => {
+        return handler(false, d);
+    })
 }
 function handleTrips(trips) {
     console.log("here are my trips:", trips);
@@ -428,7 +440,7 @@ function handleTrips(trips) {
 
         let flightPath = mkPolyLine(trip.coords);
 
-        flightPath.addListener('click',pathlistener);
+        flightPath.addListener('click', pathlistener);
         flightPath.setMap(map);
         allTrips.push(flightPath);
     });
@@ -504,16 +516,16 @@ function filterSegments() {
         allSegments = allSegs;
         allSegments.forEach(seg => {
             setTimeout(() => {
-                let pol = mkPolyLine(seg.coords,'#FF0000', 4);
-                pol.addListener('click',pathlistener);
+                let pol = mkPolyLine(seg.coords, '#FF0000', 4);
+                pol.addListener('click', pathlistener);
                 pol.setMap(map);
                 allPolySegs.push(pol);
             }, 0);
         });
         document.getElementById("filterbutton").innerHTML = "Filter Segements"
-        
 
-    }).catch(e=>{
+
+    }).catch(e => {
         console.log(e);
         alert("invalid filter applied")
         document.getElementById("filterbutton").innerHTML = "Filter Segements"
@@ -523,15 +535,15 @@ function filterSegments() {
 
 //https://www.strangeplanet.fr/work/gradient-generator/index.php
 let gradient = ["#47FF56", "#4AF954", "#4EF452", "#52EF50", "#56EA4E", "#59E44D", "#5DDF4B", "#61DA49", "#65D547", "#68D046", "#6CCA44", "#70C542", "#74C040", "#77BB3F", "#7BB63D", "#7FB03B", "#83AB39", "#86A638", "#8AA136", "#8E9C34", "#929632", "#959131", "#998C2F", "#9D872D", "#A1822B", "#A47C2A", "#A87728", "#AC7226", "#B06D24", "#B36823", "#B76221", "#BB5D1F", "#BF581D", "#C2531C", "#C64E1A", "#CA4818", "#CE4316", "#D13E15", "#D53913", "#D93411", "#DD2E0F", "#E0290E", "#E4240C", "#E81F0A", "#EC1A08", "#EF1407", "#F30F05", "#F70A03", "#FB0501", "#FF0000"]
-function getColor(min,cur,max){
-    if(cur <= min){
+function getColor(min, cur, max) {
+    if (cur <= min) {
         return gradient[0];
     }
-    if(cur >= max){
-        return gradient[gradient.length-1];
+    if (cur >= max) {
+        return gradient[gradient.length - 1];
     }
     let diff = max - min;
-    let x = (cur - min)/diff * gradient.length
+    let x = (cur - min) / diff * gradient.length
     return gradient[Math.round(x)]
 
 }
