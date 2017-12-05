@@ -1,6 +1,46 @@
 <!DOCTYPE html>
 <html>
   <head>
+
+      <style>
+          /* Always set the map height explicitly to define the size of the div
+           * element that contains the map. */
+          #map {
+            height: 100%;
+          }
+          /* Optional: Makes the sample page fill the window. */
+          html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+          }
+          #floating-panel {
+            position: absolute;
+            top: 10px;
+            left: 25%;
+            z-index: 5;
+            background-color: #fff;
+            padding: 5px;
+            border: 1px solid #999;
+            text-align: center;
+            font-family: 'Roboto','sans-serif';
+            line-height: 30px;
+            padding-left: 10px;
+          }
+          #floating-panel {
+            background-color: #fff;
+            border: 1px solid #999;
+            left: 25%;
+            padding: 5px;
+            position: absolute;
+            top: 10px;
+            z-index: 5;
+          }
+        </style>
+    <title>Chffr Data</title>
+    
+    <!-- <link rel="shortcut icon" href="https://comma.ai/assets/comma-black.png" type="image/png"> -->
+      <link rel="shortcut icon" href="https://comma.ai/assets/comma-circle-black_32x32.png?v=1508368446" type="image/png">
     <style>
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
@@ -18,10 +58,24 @@
   </head>
   <body>
     <script src="./jsonloader.js"></script>
-    <div id="map"></div>
+    <div id="floating-panel">
+        <button onclick="toggleHeatmap()" id="heatmapbutton">Toggle Data Distribution</button>
+        <button onclick="toggleTripLines()">Toggle Trips</button>
+        <a target="_blank" href="https://docs.google.com/document/d/1M6r4EhAONdBO-9MSMBvfg66Z7AiDPlHS76g5iNnbDZs/edit?usp=sharing"> <button onclick="viewHelp()">View Help</button>
+        </a>
+          <!-- <button onclick="test()">test</button> -->
+          <div>
+            Max Speed: <input type='number' id='maxSpeed'><br>
+            Min Speed: <input type='number' id='minSpeed'> <br>
+            <button onclick="filterSegments()" id="filterbutton">Filter Segments</button>
+          </div>
+      </div>
+    <div id="map"><br><br><br><br><br><br><br><br><br><br><br><center>loading...</center></div>
     
     <script async defer 
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQcYp8t7mVNorDVImo6n5FN4EZY1LvpSo&libraries=visualization&callback=initMap">
     </script>
+
+    
   </body>
 </html>

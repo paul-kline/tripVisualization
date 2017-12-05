@@ -1,0 +1,1141 @@
+
+==================== FINAL INTERFACE ====================
+2017-12-05 08:35:32.4325845 UTC
+
+interface server-0.1.0.1-A87ge1buU3B90FB70286D6:Lib 8002
+  interface hash: 6c402b6b5fab316d225d0b589194c1d0
+  ABI hash: 87028ea10753ca019156ef89590c2c0c
+  export-list hash: 7c64fc0293da304c2b13076cf61c9f36
+  orphan hash: 8088fc4e667f928b1858219573d0d54b
+  flag hash: 9766933ed88226aef3cd834c59f222e8
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Lib.allWithinof
+  Lib.amendQRes
+  Lib.averageBy
+  Lib.averageSpot
+  Lib.closestto
+  Lib.consolidate
+  Lib.consolidate_
+  Lib.distance
+  Lib.distanceSpot
+  Lib.getAveSpotWithin
+  Lib.getAveSpotWithin'
+  Lib.getJSON
+  Lib.getRadianPair
+  Lib.myinsert
+  Lib.parseTrip
+  Lib.replace
+  Lib.toRadians
+  Lib.tripToSpots
+  Lib.tripToSpotsSet
+  Lib.tripsToSpots
+  Lib.tripsToSpotsSet
+  Lib.writeOut
+module dependencies: Datas
+package dependencies: Win32-2.3.1.1@Win32-2.3.1.1
+                      aeson-1.1.2.0@aeson-1.1.2.0-IYYaF432Hu8HQKp7no3ap1
+                      array-0.5.1.1@array-0.5.1.1
+                      attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ
+                      base-4.9.1.0
+                      base-compat-0.9.3@base-compat-0.9.3-m1TEyTenyr5nJN40TpHVj
+                      binary-0.8.3.0@binary-0.8.3.0
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0
+                      dlist-0.8.0.3@dlist-0.8.0.3-BHFBNaw8k6n9WiaUNzoXpk
+                      ghc-boot-th-8.0.2@ghc-boot-th-8.0.2 ghc-prim-0.5.0.0
+                      hashable-1.2.6.1@hashable-1.2.6.1-2ZLNuHq395GGIHwEHuqZol
+                      integer-gmp-1.0.0.1
+                      integer-logarithms-1.0.2@integer-logarithms-1.0.2-92lMiWV9mmYAwfMEYgfQ0D
+                      primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh
+                      random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog
+                      scientific-0.3.5.2@scientific-0.3.5.2-FM2NdrNTcdbCDq9wuNnhIA
+                      tagged-0.8.5@tagged-0.8.5-1mTloBSoUxv8dqUr8XBGBt
+                      template-haskell-2.11.1.0
+                      text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00
+                      time-1.6.0.1@time-1.6.0.1
+                      time-locale-compat-0.1.1.3@time-locale-compat-0.1.1.3-KZ1jqNx8uhlHjmuPPj6V1Y
+                      transformers-0.5.2.0@transformers-0.5.2.0
+                      unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-Bp9XgxjuHxcI4tFehVMDGC
+                      uuid-types-1.0.3@uuid-types-1.0.3-HQOuja9trySCcuflACyDTJ
+                      vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ
+orphans: attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ:Data.Attoparsec.ByteString.Char8
+         attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ:Data.Attoparsec.Text.Internal
+         base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         hashable-1.2.6.1@hashable-1.2.6.1-2ZLNuHq395GGIHwEHuqZol:Data.Hashable.Generic
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Show
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Fusion.Bundle
+         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed
+family instance modules: attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ:Data.Attoparsec.Internal.Types
+                         base-4.9.1.0:Control.Applicative base-4.9.1.0:Data.Complex
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Compose
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.Functor.Product base-4.9.1.0:Data.Functor.Sum
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         dlist-0.8.0.3@dlist-0.8.0.3-BHFBNaw8k6n9WiaUNzoXpk:Data.DList
+                         ghc-boot-th-8.0.2@ghc-boot-th-8.0.2:GHC.LanguageExtensions.Type
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Control.Monad.Primitive
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Data.Primitive.Array
+                         server-0.1.0.1-A87ge1buU3B90FB70286D6:Datas
+                         tagged-0.8.5@tagged-0.8.5-1mTloBSoUxv8dqUr8XBGBt:Data.Tagged
+                         template-haskell-2.11.1.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+                         unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-Bp9XgxjuHxcI4tFehVMDGC:Data.HashMap.Base
+                         unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-Bp9XgxjuHxcI4tFehVMDGC:Data.HashSet
+                         uuid-types-1.0.3@uuid-types-1.0.3-HQOuja9trySCcuflACyDTJ:Data.UUID.Types.Internal
+                         uuid-types-1.0.3@uuid-types-1.0.3-HQOuja9trySCcuflACyDTJ:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Primitive
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Storable
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed.Base
+import  -/  aeson-1.1.2.0@aeson-1.1.2.0-IYYaF432Hu8HQKp7no3ap1:Data.Aeson 2c2ea416ea3f3f7ead4fbc7d22c60646
+import  -/  aeson-1.1.2.0@aeson-1.1.2.0-IYYaF432Hu8HQKp7no3ap1:Data.Aeson.Text ac2e4cc2a1fa817e783d39f0b8a4fb36
+import  -/  aeson-1.1.2.0@aeson-1.1.2.0-IYYaF432Hu8HQKp7no3ap1:Data.Aeson.Types.ToJSON f36660aaef3410ced418ccb283e21448
+import  -/  base-4.9.1.0:Data.Foldable 254e836c2d813d34e47feb29bb8d40ed
+import  -/  base-4.9.1.0:Data.Function e669266e2bc3ac37fceae74061959895
+import  -/  base-4.9.1.0:Data.List 7349774f430841349c90dfd1144aea97
+import  -/  base-4.9.1.0:Data.Maybe ecf0c6f81372d9b58b142d5e758ea51b
+import  -/  base-4.9.1.0:Data.OldList c9282ee91951bdcbd918d2960562c007
+import  -/  base-4.9.1.0:Data.Tuple b07f695e7ce8fe20cc8a32abf62f60ec
+import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
+import  -/  base-4.9.1.0:GHC.Float b620368aab866c2bb9d3a0a459566b84
+import  -/  base-4.9.1.0:GHC.Generics 87e8d511f978e043d53db008cc403901
+import  -/  base-4.9.1.0:GHC.IO 4d461f9283683225c61e68db403481ad
+import  -/  base-4.9.1.0:GHC.List d11eb227c1c6fbfd89bb781d72eaea0d
+import  -/  base-4.9.1.0:GHC.Num 38b8aac8807c096c7f3ca3c1eff02939
+import  -/  base-4.9.1.0:GHC.Real b88ae4a48c079652623073a5bbf5c9b0
+import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
+import  -/  bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Lazy a933f8de698ac656298f2d79daa92bb5
+import  -/  bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Lazy.Internal 61e0e0074cd46129068bdc82d100a6ee
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base dfcca0a6b3fe956067f7db6df4d400c2
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Map.Strict 5978345e8d03c94ea37df1bd4052990d
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Set 3ed2324fd1e757464a8ac2b636a64e5a
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base 7066127ea77dde3a5a3f19fd2ed3d39a
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+import  -/  Datas be98e238c7a6e3054e3142e3d6e93b2b
+  exports: 67e6caa11e5e8dd4dfd817c985152735
+  Distance 7323848740c19bfe12b610acaabb9b48
+  Lat 28e2f7745460b7de0fe754a58835f5b4
+  Long 29f35b9d515f68732ba92ba21e33bac5
+  QRes c6dfc4bbed30f203a0fa0825ac829a83
+  Spot 07d2863127f3528fee4141577492e659
+  Trip 07d2863127f3528fee4141577492e659
+  aveLocation 7d4e48069607d525af6953aede7caecb
+  aveSpeed a6a423cbbc2b93bfe05d83643c24dc57
+  coords e8372a2967ec343a29f6812f49c9b82d
+  dataPoints a2a4394441ecfb96854c834f61c0974b
+  lat 1b37556868e5c85e0e8ca100c80f5bf8
+  lng eac17483c4668274bec7938f5eac7660
+  maxSpeed 3750d6a745f70bb00eb9f1ba1ca87b97
+  minSpeed bcbc4bd4d42e1f4e0ff61583053d6747
+  mkQRes 180db9c29bc701effb7411cf29614e08
+  mkSpot dbc960e9efae63532a88d4b77761d1e2
+  radiusOfEarth 16c74df46706bb435d88cfc3c77866f9
+  speed d570bfe6c57e8dc63e6dd8dc4cdc0ee5
+  trips 61b30ffb6ab3416533bbe85d13db9cab
+import  -/  text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy.IO 3684544ba74554e780a58302484f8353
+c2f89af41299e7e4894c7fc0d6069455
+  $sfromList :: [Datas.Spot] -> Data.Set.Base.Set Datas.Spot
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: [Datas.Spot]) ->
+                 case ds of wild {
+                   [] -> Data.Set.Base.Tip @ Datas.Spot
+                   : x ds1
+                   -> case ds1 of wild1 {
+                        []
+                        -> case x of dt { Datas.Spot ipv ipv1 ipv2 ipv3 ipv4 ipv5 ipv6 ipv7 ->
+                           Data.Set.Base.Bin
+                             @ Datas.Spot
+                             1#
+                             dt
+                             (Data.Set.Base.Tip @ Datas.Spot)
+                             (Data.Set.Base.Tip @ Datas.Spot) }
+                        : ipv ipv1
+                        -> case x of ww { Datas.Spot ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww8 ->
+                           case ipv of ww9 { Datas.Spot ww10 ww11 ww12 ww13 ww14 ww15 ww16 ww17 ->
+                           case Datas.$w$ccompare1
+                                  ww1
+                                  ww3
+                                  ww5
+                                  ww8
+                                  ww10
+                                  ww12
+                                  ww14
+                                  ww17 of wild2 {
+                             DEFAULT
+                             -> Lib.$sfromList_go5
+                                  (Data.Set.Base.Bin
+                                     @ Datas.Spot
+                                     1#
+                                     ww
+                                     (Data.Set.Base.Tip @ Datas.Spot)
+                                     (Data.Set.Base.Tip @ Datas.Spot))
+                                  wild1
+                             GHC.Types.LT
+                             -> Lib.$wgo5
+                                  1#
+                                  (Data.Set.Base.Bin
+                                     @ Datas.Spot
+                                     1#
+                                     ww
+                                     (Data.Set.Base.Tip @ Datas.Spot)
+                                     (Data.Set.Base.Tip @ Datas.Spot))
+                                  wild1 } } } } }) -}
+2cece32e17cecdcb0fdac81312133977
+  $sfromList1 :: [Datas.Trip] -> Data.Set.Base.Set Datas.Trip
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: [Datas.Trip]) ->
+                 case ds of wild {
+                   [] -> Data.Set.Base.Tip @ Datas.Trip
+                   : x ds1
+                   -> case ds1 of wild1 {
+                        []
+                        -> case x of dt { Datas.Trip ipv ipv1 ipv2 ->
+                           Data.Set.Base.Bin
+                             @ Datas.Trip
+                             1#
+                             dt
+                             (Data.Set.Base.Tip @ Datas.Trip)
+                             (Data.Set.Base.Tip @ Datas.Trip) }
+                        : ipv ipv1
+                        -> case x of ww { Datas.Trip ww1 ww2 ww3 ->
+                           case ipv of ww4 { Datas.Trip ww5 ww6 ww7 ->
+                           case GHC.Classes.$fOrd[]_$ccompare
+                                  @ Datas.Spot
+                                  Datas.$fOrdSpot
+                                  ww1
+                                  ww5 of wild2 {
+                             GHC.Types.LT
+                             -> Lib.$wgo1
+                                  1#
+                                  (Data.Set.Base.Bin
+                                     @ Datas.Trip
+                                     1#
+                                     ww
+                                     (Data.Set.Base.Tip @ Datas.Trip)
+                                     (Data.Set.Base.Tip @ Datas.Trip))
+                                  wild1
+                             GHC.Types.EQ
+                             -> case GHC.Classes.$fOrd[]_$s$ccompare1 ww2 ww6 of wild3 {
+                                  GHC.Types.LT
+                                  -> Lib.$wgo1
+                                       1#
+                                       (Data.Set.Base.Bin
+                                          @ Datas.Trip
+                                          1#
+                                          ww
+                                          (Data.Set.Base.Tip @ Datas.Trip)
+                                          (Data.Set.Base.Tip @ Datas.Trip))
+                                       wild1
+                                  GHC.Types.EQ
+                                  -> case GHC.Classes.$fOrd[]_$s$ccompare1 ww3 ww7 of wild4 {
+                                       DEFAULT
+                                       -> Lib.$sfromList_go1
+                                            (Data.Set.Base.Bin
+                                               @ Datas.Trip
+                                               1#
+                                               ww
+                                               (Data.Set.Base.Tip @ Datas.Trip)
+                                               (Data.Set.Base.Tip @ Datas.Trip))
+                                            wild1
+                                       GHC.Types.LT
+                                       -> Lib.$wgo1
+                                            1#
+                                            (Data.Set.Base.Bin
+                                               @ Datas.Trip
+                                               1#
+                                               ww
+                                               (Data.Set.Base.Tip @ Datas.Trip)
+                                               (Data.Set.Base.Tip @ Datas.Trip))
+                                            wild1 }
+                                  GHC.Types.GT
+                                  -> Lib.$sfromList_go1
+                                       (Data.Set.Base.Bin
+                                          @ Datas.Trip
+                                          1#
+                                          ww
+                                          (Data.Set.Base.Tip @ Datas.Trip)
+                                          (Data.Set.Base.Tip @ Datas.Trip))
+                                       wild1 }
+                             GHC.Types.GT
+                             -> Lib.$sfromList_go1
+                                  (Data.Set.Base.Bin
+                                     @ Datas.Trip
+                                     1#
+                                     ww
+                                     (Data.Set.Base.Tip @ Datas.Trip)
+                                     (Data.Set.Base.Tip @ Datas.Trip))
+                                  wild1 } } } } }) -}
+b874408738e8c4d172b9aa193ed80f72
+  $sfromList_go1 ::
+    Data.Set.Base.Set Datas.Trip
+    -> [Datas.Trip] -> Data.Set.Base.Set Datas.Trip
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+7369628593125b3184a92dc5bd802d46
+  $sfromList_go5 ::
+    Data.Set.Base.Set Datas.Spot
+    -> [Datas.Spot] -> Data.Set.Base.Set Datas.Spot
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+78ccdda963a655b4483dd92620a6d82a
+  $sinsert_$sgo5 ::
+    Datas.Trip
+    -> Data.Set.Base.Set Datas.Trip -> Data.Set.Base.Set Datas.Trip
+  {- Arity: 2, Strictness: <S,1*U(U,U,U)><S,1*U>, Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Datas.Trip) (w1 :: Data.Set.Base.Set Datas.Trip) ->
+                 case w of ww { Datas.Trip ww1 ww2 ww3 ->
+                 Lib.$w$sgo5 ww1 ww2 ww3 w1 }) -}
+0fb7a219f1602e5effa2594de73623e6
+  $sunions2 ::
+    Data.Map.Base.Map Datas.Spot a
+    -> [Data.Map.Base.Map Datas.Spot a]
+    -> Data.Map.Base.Map Datas.Spot a
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+e114bcdfabcb2c56322975506943c86d
+  $sunions_go5 ::
+    Data.Set.Base.Set Datas.Spot
+    -> [Data.Set.Base.Set Datas.Spot] -> Data.Set.Base.Set Datas.Spot
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+55c52eed430a844e24c4fd400428a8ab
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Lib.$trModule2 Lib.$trModule1) -}
+ebe29397e870b1590c57929a94ca78b8
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Lib"#) -}
+a1e3460e3f88b5291198a7eeb4d8a94c
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "server-0.1.0.1-A87ge1buU3B90FB70286D6"#) -}
+8d71dc123d5a44be00526f208a88972d
+  $w$j ::
+    Data.Aeson.Types.Internal.Value -> GHC.Base.Maybe Datas.Trip
+  {- Arity: 1, Strictness: <L,1*U>, Inline: [0],
+     Unfolding: (\ (w :: Data.Aeson.Types.Internal.Value)[OneShot] ->
+                 case (Datas.$fFromJSONTrip2
+                         @ GHC.Prim.Any
+                         Data.Aeson.Types.Internal.defaultOptions
+                         (Data.Aeson.Types.FromJSON.$WNoFromArgs @ GHC.Prim.Any)
+                         w)
+                        `cast`
+                      (Data.Aeson.Types.Internal.N:Parser[0]
+                           (Sub (Sym (Datas.Rep_Trip[0])) <GHC.Prim.Any>_N))
+                        @ Data.Aeson.Types.Internal.Result
+                        @ Datas.Trip
+                        (GHC.Types.[] @ Data.Aeson.Types.Internal.JSONPathElement)
+                        Lib.parseTrip3
+                        Lib.parseTrip2 of wild1 {
+                   Data.Aeson.Types.Internal.Error ipv
+                   -> GHC.Base.Nothing @ Datas.Trip
+                   Data.Aeson.Types.Internal.Success a1
+                   -> GHC.Base.Just @ Datas.Trip a1 }) -}
+f276cc763d93e0f7a8795eda448cc9e3
+  $w$sgo1 ::
+    GHC.Types.Double
+    -> GHC.Types.Double
+    -> GHC.Types.Double
+    -> GHC.Types.Double
+    -> GHC.Types.Int
+    -> GHC.Base.Maybe (GHC.Types.Double, GHC.Types.Double)
+    -> GHC.Base.Maybe (GHC.Types.Int, GHC.Types.Int)
+    -> GHC.Base.Maybe (GHC.Types.Int, GHC.Types.Double)
+    -> Data.Set.Base.Set Datas.Spot
+    -> Data.Set.Base.Set Datas.Spot
+  {- Arity: 9,
+     Strictness: <L,U(U)><L,U><L,U(U)><L,U><L,U(U)><L,U><L,U><L,U><S,1*U>,
+     Inline: [0] -}
+54a72ae5fafba89c48fd76cc94714b4b
+  $w$sgo5 ::
+    [Datas.Spot]
+    -> GHC.Base.String
+    -> GHC.Base.String
+    -> Data.Set.Base.Set Datas.Trip
+    -> Data.Set.Base.Set Datas.Trip
+  {- Arity: 4, Strictness: <L,U><L,U><L,U><S,1*U>, Inline: [0] -}
+663f000628ea1362188c2ed55f4407b0
+  $wamendQRes ::
+    Datas.QRes
+    -> Data.Set.Base.Set Datas.Trip
+    -> Datas.Spot
+    -> Datas.Trip
+    -> (# Datas.QRes, Data.Set.Base.Set Datas.Trip #)
+  {- Arity: 4,
+     Strictness: <L,U(1*U,1*U,1*U,1*U,U,U)><L,U><L,U(1*U(U),1*U(U),1*U(U),A,A,A,A,A)><L,U(U,U,U)>,
+     Inline: [0] -}
+beb03dc320a00815214754a0ca956464
+  $wgo1 ::
+    GHC.Prim.Int#
+    -> Data.Set.Base.Set Datas.Trip
+    -> [Datas.Trip]
+    -> Data.Set.Base.Set Datas.Trip
+  {- Arity: 3, Strictness: <L,U><S,1*U><S,1*U>, Inline: [0] -}
+b5309a63a9243b705398040f7a50587e
+  $wgo2 ::
+    [Datas.Spot]
+    -> GHC.Base.String
+    -> GHC.Base.String
+    -> Data.Set.Base.Set Datas.Trip
+    -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs, Strictness: <L,U><L,U><L,U><S,1*U>,
+     Inline: [0] -}
+e5684c61a872d6549b895fa3c9d18be0
+  $wgo5 ::
+    GHC.Prim.Int#
+    -> Data.Set.Base.Set Datas.Spot
+    -> [Datas.Spot]
+    -> Data.Set.Base.Set Datas.Spot
+  {- Arity: 3, Strictness: <L,U><S,1*U><S,1*U>, Inline: [0] -}
+4fb62faa00a04ddbe4e7cd38070ab34e
+  allWithinof ::
+    [(Datas.Spot, Datas.Trip)]
+    -> Datas.Spot -> Datas.Distance -> [(Datas.Spot, Datas.Trip)]
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S,1*U><L,U(U(U),A,U(U),A,A,A,A,A)><L,1*U(U)> -}
+d64785515d4af5638f3f05d444d57d23
+  amendQRes ::
+    Datas.QRes
+    -> Data.Set.Base.Set Datas.Trip
+    -> Datas.Spot
+    -> Datas.Trip
+    -> (Datas.QRes, Data.Set.Base.Set Datas.Trip)
+  {- Arity: 4,
+     Strictness: <L,U(1*U,1*U,1*U,1*U,U,U)><L,U><L,U(1*U(U),1*U(U),1*U(U),A,A,A,A,A)><L,U(U,U,U)>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (4, True, False)
+                (\ (w :: Datas.QRes)
+                   (w1 :: Data.Set.Base.Set Datas.Trip)
+                   (w2 :: Datas.Spot)
+                   (w3 :: Datas.Trip) ->
+                 case Lib.$wamendQRes w w1 w2 w3 of ww { (#,#) ww1 ww2 ->
+                 (ww1, ww2) }) -}
+4aaf25b773625c94f5c083cfc4c49fc1
+  averageBy :: GHC.Real.Fractional a => (b -> a) -> [b] -> a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(LC(C(S))LL),U(1*U,1*C1(C1(U)),A,A)><L,C(U)><L,U>,
+     Unfolding: (\ @ a
+                   @ b
+                   ($dFractional :: GHC.Real.Fractional a)
+                   (eta :: b -> a)
+                   (eta1 :: [b]) ->
+                 let {
+                   $dNum :: GHC.Num.Num a = GHC.Real.$p1Fractional @ a $dFractional
+                 } in
+                 GHC.Real./
+                   @ a
+                   $dFractional
+                   (Data.Foldable.$fFoldable[]_$cfoldr'
+                      @ b
+                      @ a
+                      (\ (a1 :: b) (b1 :: a)[OneShot] -> GHC.Num.+ @ a $dNum b1 (eta a1))
+                      (GHC.Num.fromInteger @ a $dNum Lib.averageBy2)
+                      eta1)
+                   (Data.OldList.genericLength @ a @ b $dNum eta1)) -}
+66d1303fbd9b17db6beef70b0e0a170e
+  averageBy1 :: GHC.Types.Double
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.D# 0.0##) -}
+8e3f773635218b852f4bdfd148d0334d
+  averageBy2 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (0) -}
+507e88bca910aa4fb67d78a0934f375d
+  averageSpot ::
+    [(Datas.Spot, Datas.Trip)] -> GHC.Base.Maybe Datas.QRes
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: [(Datas.Spot, Datas.Trip)]) ->
+                 case ds of wild {
+                   [] -> GHC.Base.Nothing @ Datas.QRes
+                   : ipv ipv1
+                   -> GHC.Base.Just
+                        @ Datas.QRes
+                        (Datas.QRes
+                           (GHC.Base.Just
+                              @ GHC.Types.Double
+                              (case Lib.averageSpot_go1 wild of wild1 { (,) x ds1 ->
+                               case x of wild2 { Datas.Spot ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ->
+                               ds3 } }))
+                           (GHC.Base.Just
+                              @ GHC.Types.Double
+                              (case Lib.averageSpot_go wild of wild1 { (,) x ds1 ->
+                               case x of wild2 { Datas.Spot ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ->
+                               ds3 } }))
+                           (GHC.Base.Just
+                              @ GHC.Types.Double
+                              (case Data.Foldable.$fFoldable[]_$cfoldr'
+                                      @ (Datas.Spot, Datas.Trip)
+                                      @ GHC.Types.Double
+                                      Lib.averageSpot4
+                                      Lib.averageBy1
+                                      wild of wild1 { GHC.Types.D# x ->
+                               case Data.OldList.genericLength
+                                      @ GHC.Types.Double
+                                      @ (Datas.Spot, Datas.Trip)
+                                      GHC.Float.$fNumDouble
+                                      wild of wild2 { GHC.Types.D# y ->
+                               case GHC.Prim./## x y of wild3 { DEFAULT ->
+                               GHC.Types.D# wild3 } } }))
+                           (GHC.Base.Just
+                              @ Datas.TripCount
+                              (case Lib.$sfromList1
+                                      (GHC.Base.map
+                                         @ (Datas.Spot, Datas.Trip)
+                                         @ Datas.Trip
+                                         (Data.Tuple.snd @ Datas.Spot @ Datas.Trip)
+                                         wild) of wild1 {
+                                 Data.Set.Base.Bin dt ds1 ds2 ds3 -> GHC.Types.I# dt
+                                 Data.Set.Base.Tip -> Lib.averageSpot3 }))
+                           (GHC.Base.Just
+                              @ Datas.DataPoints
+                              (case GHC.List.$wlenAcc
+                                      @ (Datas.Spot, Datas.Trip)
+                                      wild
+                                      0# of ww2 { DEFAULT ->
+                               GHC.Types.I# ww2 }))
+                           (GHC.Base.Just
+                              @ (GHC.Types.Double, GHC.Types.Double)
+                              (case Data.Foldable.$fFoldable[]_$cfoldr'
+                                      @ (Datas.Spot, Datas.Trip)
+                                      @ GHC.Types.Double
+                                      Lib.averageSpot2
+                                      Lib.averageBy1
+                                      wild of wild1 { GHC.Types.D# x ->
+                               case Data.OldList.genericLength
+                                      @ GHC.Types.Double
+                                      @ (Datas.Spot, Datas.Trip)
+                                      GHC.Float.$fNumDouble
+                                      wild of wild2 { GHC.Types.D# y ->
+                               case GHC.Prim./## x y of wild3 { DEFAULT ->
+                               GHC.Types.D# wild3 } } },
+                               case Data.Foldable.$fFoldable[]_$cfoldr'
+                                      @ (Datas.Spot, Datas.Trip)
+                                      @ GHC.Types.Double
+                                      Lib.averageSpot1
+                                      Lib.averageBy1
+                                      wild of wild1 { GHC.Types.D# x ->
+                               case Data.OldList.genericLength
+                                      @ GHC.Types.Double
+                                      @ (Datas.Spot, Datas.Trip)
+                                      GHC.Float.$fNumDouble
+                                      wild of wild2 { GHC.Types.D# y ->
+                               case GHC.Prim./## x y of wild3 { DEFAULT ->
+                               GHC.Types.D# wild3 } } }))) }) -}
+adf83acadac1dafbe8dfaa5cd97b30d4
+  averageSpot1 ::
+    (Datas.Spot, Datas.Trip) -> GHC.Types.Double -> GHC.Types.Double
+  {- Arity: 2, HasNoCafRefs,
+     Unfolding: (\ (a :: (Datas.Spot, Datas.Trip))
+                   (b :: GHC.Types.Double)[OneShot] ->
+                 case b of wild { GHC.Types.D# x ->
+                 case a of wild1 { (,) x1 ds1 ->
+                 case x1 of wild2 { Datas.Spot ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ->
+                 case ds4 of wild3 { GHC.Types.D# y ->
+                 GHC.Types.D# (GHC.Prim.+## x y) } } } }) -}
+99f506c34d5c7f9ca69dfdecea4a8c76
+  averageSpot2 ::
+    (Datas.Spot, Datas.Trip) -> GHC.Types.Double -> GHC.Types.Double
+  {- Arity: 2, HasNoCafRefs,
+     Unfolding: (\ (a :: (Datas.Spot, Datas.Trip))
+                   (b :: GHC.Types.Double)[OneShot] ->
+                 case b of wild { GHC.Types.D# x ->
+                 case a of wild1 { (,) x1 ds1 ->
+                 case x1 of wild2 { Datas.Spot ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ->
+                 case ds2 of wild3 { GHC.Types.D# y ->
+                 GHC.Types.D# (GHC.Prim.+## x y) } } } }) -}
+1a8c89de8c1df2edf9a67aaebb799ee0
+  averageSpot3 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 0#) -}
+a900c9944b2317b31babc42984d4aae0
+  averageSpot4 ::
+    (Datas.Spot, Datas.Trip) -> GHC.Types.Double -> GHC.Types.Double
+  {- Arity: 2, HasNoCafRefs,
+     Unfolding: (\ (a :: (Datas.Spot, Datas.Trip))
+                   (b :: GHC.Types.Double)[OneShot] ->
+                 case b of wild { GHC.Types.D# x ->
+                 case a of wild1 { (,) x1 ds1 ->
+                 case x1 of wild2 { Datas.Spot ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ->
+                 case ds3 of wild3 { GHC.Types.D# y ->
+                 GHC.Types.D# (GHC.Prim.+## x y) } } } }) -}
+9d8d2fabd52a350cd4a2591dfc948da7
+  averageSpot_go ::
+    [(Datas.Spot, Datas.Trip)] -> (Datas.Spot, Datas.Trip)
+  {- Arity: 1, Strictness: <S,1*U> -}
+cbc48c688f6dfc8fde0d3cbdcc864826
+  averageSpot_go1 ::
+    [(Datas.Spot, Datas.Trip)] -> (Datas.Spot, Datas.Trip)
+  {- Arity: 1, Strictness: <S,1*U> -}
+c1bde123d7683522683fbd62a2df4fee
+  closestto ::
+    [(Datas.Spot, Datas.Trip)]
+    -> Datas.Spot -> (Datas.Spot, Datas.Distance)
+  {- Arity: 2, Strictness: <S,U><L,U(U(U),A,U(U),A,A,A,A,A)>,
+     Unfolding: (\ (ls :: [(Datas.Spot, Datas.Trip)])
+                   (tome :: Datas.Spot) ->
+                 Data.Foldable.$fFoldable[]_$cfoldr'
+                   @ (Datas.Spot, Datas.Trip)
+                   @ (Datas.Spot, Datas.Distance)
+                   (\ (ds :: (Datas.Spot, Datas.Trip))
+                      (ds1 :: (Datas.Spot, Datas.Distance))[OneShot] ->
+                    case ds of wild { (,) sp ds2 ->
+                    case ds1 of wild1 { (,) curClose distance1 ->
+                    case sp of ww { Datas.Spot ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww8 ->
+                    case ww1 of ww9 { GHC.Types.D# ww10 ->
+                    case ww3 of ww11 { GHC.Types.D# ww12 ->
+                    case tome of ww13 { Datas.Spot ww14 ww15 ww16 ww17 ww18 ww19 ww20 ww21 ->
+                    case ww14 of ww22 { GHC.Types.D# ww23 ->
+                    case ww16 of ww24 { GHC.Types.D# ww25 ->
+                    let {
+                      x :: GHC.Prim.Double# = GHC.Prim.*## 1.7453292519943295e-2## ww23
+                    } in
+                    let {
+                      y :: GHC.Prim.Double# = GHC.Prim.*## 1.7453292519943295e-2## ww10
+                    } in
+                    let {
+                      x1 :: GHC.Prim.Double#
+                      = GHC.Prim.sinDouble# (GHC.Prim./## (GHC.Prim.-## x y) 2.0##)
+                    } in
+                    let {
+                      x2 :: GHC.Prim.Double#
+                      = GHC.Prim.sinDouble#
+                          (GHC.Prim./##
+                             (GHC.Prim.-##
+                                (GHC.Prim.*## 1.7453292519943295e-2## ww25)
+                                (GHC.Prim.*## 1.7453292519943295e-2## ww12))
+                             2.0##)
+                    } in
+                    let {
+                      y1 :: GHC.Prim.Double#
+                      = GHC.Prim.+##
+                          (GHC.Prim.*## x1 x1)
+                          (GHC.Prim.*##
+                             (GHC.Prim.*## (GHC.Prim.cosDouble# y) (GHC.Prim.cosDouble# x))
+                             (GHC.Prim.*## x2 x2))
+                    } in
+                    case GHC.Float.$fRealFloatDouble_$s$w$catan2
+                           (GHC.Prim.**## (GHC.Prim.-## 1.0## y1) 0.5##)
+                           (GHC.Prim.**## y1 0.5##) of ww26 { DEFAULT ->
+                    case distance1 of wild2 { GHC.Types.D# y2 ->
+                    let {
+                      x3 :: GHC.Prim.Double#
+                      = GHC.Prim.*## 6378700.0## (GHC.Prim.+## ww26 ww26)
+                    } in
+                    case GHC.Prim.tagToEnum#
+                           @ GHC.Types.Bool
+                           (GHC.Prim.<## x3 y2) of wild3 {
+                      GHC.Types.False -> wild1
+                      GHC.Types.True -> (ww, GHC.Types.D# x3) } } } } } } } } } } })
+                   (let {
+                      h :: Datas.Spot
+                      = case ls of wild {
+                          [] -> case GHC.List.badHead ret_ty Datas.Spot of {}
+                          : x ds1 -> case x of wild1 { (,) x1 ds2 -> x1 } }
+                    } in
+                    (h, Lib.distanceSpot h tome))
+                   (GHC.List.tail @ (Datas.Spot, Datas.Trip) ls)) -}
+2aab464ed9937210bcd0be0af90462d8
+  consolidate ::
+    [(Datas.Spot, Datas.Trip)]
+    -> Datas.Distance -> [(Datas.Spot, Datas.QRes)]
+  {- Arity: 2, Strictness: <S,1*U><L,U(U)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [(Datas.Spot, Datas.Trip)]) (d :: Datas.Distance) ->
+                 GHC.Base.build
+                   @ (Datas.Spot, Datas.QRes)
+                   (\ @ b1
+                      (c :: (Datas.Spot, Datas.QRes) -> b1 -> b1)[OneShot]
+                      (n :: b1)[OneShot] ->
+                    GHC.Base.foldr
+                      @ (Datas.Spot, Datas.QRes, Data.Set.Base.Set Datas.Trip)
+                      @ b1
+                      (GHC.Base.mapFB
+                         @ (Datas.Spot, Datas.QRes)
+                         @ b1
+                         @ (Datas.Spot, Datas.QRes, Data.Set.Base.Set Datas.Trip)
+                         c
+                         Lib.consolidate1)
+                      n
+                      (Lib.consolidate_
+                         ls
+                         (GHC.Types.[]
+                            @ (Datas.Spot, Datas.QRes, Data.Set.Base.Set Datas.Trip))
+                         d))) -}
+84f678fb3ba3ab3802183cb07776b5e5
+  consolidate1 ::
+    (Datas.Spot, Datas.QRes, Data.Set.Base.Set Datas.Trip)
+    -> (Datas.Spot, Datas.QRes)
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U,U,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: (Datas.Spot, Datas.QRes,
+                           Data.Set.Base.Set Datas.Trip)) ->
+                 case ds of wild { (,,) x y ds1 -> (x, y) }) -}
+d42a2216e0a4739ba6d9f2585df71eb1
+  consolidate_ ::
+    [(Datas.Spot, Datas.Trip)]
+    -> [(Datas.Spot, Datas.QRes, Data.Set.Base.Set Datas.Trip)]
+    -> Datas.Distance
+    -> [(Datas.Spot, Datas.QRes, Data.Set.Base.Set Datas.Trip)]
+  {- Arity: 3, Strictness: <S,1*U><S,U><L,U(U)> -}
+6cfb56266c0f87f8de2075911b8ca2e6
+  distance ::
+    Datas.Lat
+    -> Datas.Long -> Datas.Lat -> Datas.Long -> Datas.Distance
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S(S),1*U(U)><S(S),1*U(U)><S(S),1*U(U)><S(S),1*U(U)>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (4, True, False)
+                (\ (w :: Datas.Lat)
+                   (w1 :: Datas.Long)
+                   (w2 :: Datas.Lat)
+                   (w3 :: Datas.Long) ->
+                 case w of ww { GHC.Types.D# ww1 ->
+                 case w1 of ww2 { GHC.Types.D# ww3 ->
+                 case w2 of ww4 { GHC.Types.D# ww5 ->
+                 case w3 of ww6 { GHC.Types.D# ww7 ->
+                 let {
+                   x :: GHC.Prim.Double#
+                   = GHC.Prim.sinDouble#
+                       (GHC.Prim./##
+                          (GHC.Prim.-##
+                             (GHC.Prim.*## 1.7453292519943295e-2## ww7)
+                             (GHC.Prim.*## 1.7453292519943295e-2## ww3))
+                          2.0##)
+                 } in
+                 let {
+                   y :: GHC.Prim.Double# = GHC.Prim.*## 1.7453292519943295e-2## ww1
+                 } in
+                 let {
+                   x1 :: GHC.Prim.Double# = GHC.Prim.*## 1.7453292519943295e-2## ww5
+                 } in
+                 let {
+                   x2 :: GHC.Prim.Double#
+                   = GHC.Prim.sinDouble# (GHC.Prim./## (GHC.Prim.-## x1 y) 2.0##)
+                 } in
+                 let {
+                   y1 :: GHC.Prim.Double#
+                   = GHC.Prim.+##
+                       (GHC.Prim.*## x2 x2)
+                       (GHC.Prim.*##
+                          (GHC.Prim.*## (GHC.Prim.cosDouble# y) (GHC.Prim.cosDouble# x1))
+                          (GHC.Prim.*## x x))
+                 } in
+                 case GHC.Float.$fRealFloatDouble_$s$w$catan2
+                        (GHC.Prim.**## (GHC.Prim.-## 1.0## y1) 0.5##)
+                        (GHC.Prim.**## y1 0.5##) of ww8 { DEFAULT ->
+                 GHC.Types.D#
+                   (GHC.Prim.*## 6378700.0## (GHC.Prim.+## ww8 ww8)) } } } } }) -}
+63a625e4990d7cb4b51d5a1c418c0b13
+  distanceSpot :: Datas.Spot -> Datas.Spot -> Datas.Distance
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(S)LS(S)LLLLL),1*U(1*U(U),A,1*U(U),A,A,A,A,A)><S(S(S)LS(S)LLLLL),1*U(1*U(U),A,1*U(U),A,A,A,A,A)>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Datas.Spot) (w1 :: Datas.Spot) ->
+                 case w of ww { Datas.Spot ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww8 ->
+                 case ww1 of ww9 { GHC.Types.D# ww10 ->
+                 case ww3 of ww11 { GHC.Types.D# ww12 ->
+                 case w1 of ww13 { Datas.Spot ww14 ww15 ww16 ww17 ww18 ww19 ww20 ww21 ->
+                 case ww14 of ww22 { GHC.Types.D# ww23 ->
+                 case ww16 of ww24 { GHC.Types.D# ww25 ->
+                 let {
+                   x :: GHC.Prim.Double#
+                   = GHC.Prim.sinDouble#
+                       (GHC.Prim./##
+                          (GHC.Prim.-##
+                             (GHC.Prim.*## 1.7453292519943295e-2## ww25)
+                             (GHC.Prim.*## 1.7453292519943295e-2## ww12))
+                          2.0##)
+                 } in
+                 let {
+                   y :: GHC.Prim.Double# = GHC.Prim.*## 1.7453292519943295e-2## ww10
+                 } in
+                 let {
+                   x1 :: GHC.Prim.Double# = GHC.Prim.*## 1.7453292519943295e-2## ww23
+                 } in
+                 let {
+                   x2 :: GHC.Prim.Double#
+                   = GHC.Prim.sinDouble# (GHC.Prim./## (GHC.Prim.-## x1 y) 2.0##)
+                 } in
+                 let {
+                   y1 :: GHC.Prim.Double#
+                   = GHC.Prim.+##
+                       (GHC.Prim.*## x2 x2)
+                       (GHC.Prim.*##
+                          (GHC.Prim.*## (GHC.Prim.cosDouble# y) (GHC.Prim.cosDouble# x1))
+                          (GHC.Prim.*## x x))
+                 } in
+                 case GHC.Float.$fRealFloatDouble_$s$w$catan2
+                        (GHC.Prim.**## (GHC.Prim.-## 1.0## y1) 0.5##)
+                        (GHC.Prim.**## y1 0.5##) of ww26 { DEFAULT ->
+                 GHC.Types.D#
+                   (GHC.Prim.*##
+                      6378700.0##
+                      (GHC.Prim.+## ww26 ww26)) } } } } } } }) -}
+c113f4547ceffafe2d7723cdcacf2544
+  getAveSpotWithin ::
+    [(Datas.Spot, Datas.Trip)]
+    -> Datas.Spot -> Datas.Distance -> GHC.Base.Maybe Datas.QRes
+  {- Arity: 3,
+     Strictness: <S,1*U><L,U(U(U),A,U(U),A,A,A,A,A)><L,1*U(U)>,
+     Unfolding: InlineRule (3, True, False)
+                (\ (ls :: [(Datas.Spot, Datas.Trip)])
+                   (sp :: Datas.Spot)
+                   (d :: Datas.Distance) ->
+                 Lib.averageSpot (Lib.allWithinof ls sp d)) -}
+63d508397909fa79d104d2d4ef424aa5
+  getAveSpotWithin' ::
+    [(Datas.Spot, Datas.Trip)]
+    -> Datas.Spot
+    -> Datas.Distance
+    -> (GHC.Base.Maybe Datas.QRes, [(Datas.Spot, Datas.Trip)])
+  {- Arity: 3,
+     Strictness: <L,1*U><L,U(U(U),A,U(U),A,A,A,A,A)><L,1*U(U)>m,
+     Unfolding: InlineRule (3, True, False)
+                (\ (ls :: [(Datas.Spot, Datas.Trip)])
+                   (sp :: Datas.Spot)
+                   (d :: Datas.Distance) ->
+                 let {
+                   matches :: [(Datas.Spot, Datas.Trip)] = Lib.allWithinof ls sp d
+                 } in
+                 (Lib.averageSpot matches, matches)) -}
+783331940ad2cbb6d3df6362f1e0cd8e
+  getJSON ::
+    GHC.Base.String
+    -> GHC.Types.IO Data.ByteString.Lazy.Internal.ByteString
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Data.ByteString.Lazy.readFile1
+                  `cast`
+                (<GHC.IO.FilePath>_R
+                 ->_R Sym (GHC.Types.N:IO[0]
+                               <Data.ByteString.Lazy.Internal.ByteString>_R)) -}
+f16e17bb92ecd3b970d89bf75561544c
+  getRadianPair :: Datas.Spot -> (GHC.Types.Double, GHC.Types.Double)
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <L,U(1*U(U),A,1*U(U),A,A,A,A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (p :: Datas.Spot) ->
+                 (case p of wild { Datas.Spot ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ->
+                  case ds1 of wild1 { GHC.Types.D# y ->
+                  GHC.Types.D# (GHC.Prim.*## 1.7453292519943295e-2## y) } },
+                  case p of wild { Datas.Spot ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ->
+                  case ds3 of wild1 { GHC.Types.D# y ->
+                  GHC.Types.D# (GHC.Prim.*## 1.7453292519943295e-2## y) } })) -}
+e45119575515b47aeb9c5be67f0195aa
+  myinsert ::
+    Datas.Spot
+    -> Datas.Trip
+    -> Datas.Distance
+    -> GHC.Types.Bool
+    -> [(Datas.Spot, Datas.QRes, Data.Set.Base.Set Datas.Trip)]
+    -> [(Datas.Spot, Datas.QRes, Data.Set.Base.Set Datas.Trip)]
+  {- Arity: 5,
+     Strictness: <L,U(U(U),U(U),U(U),U,U,U,U,U)><L,U(U,U,U)><L,1*U(U)><S,U><S,U> -}
+e13b6376aa224f362fc28e62e6b42a78
+  parseTrip ::
+    GHC.Base.String -> GHC.Types.IO (GHC.Base.Maybe Datas.Trip)
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Lib.parseTrip1
+                  `cast`
+                (<GHC.Base.String>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <GHC.Base.Maybe Datas.Trip>_R)) -}
+449b6d8e23482116fa3064e378800b46
+  parseTrip1 ::
+    GHC.Base.String
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          GHC.Base.Maybe Datas.Trip #)
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: (\ (file :: GHC.Base.String)
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.IO.Handle.FD.openBinaryFile1
+                        file
+                        GHC.IO.IOMode.ReadMode
+                        eta of ds1 { (#,#) ipv ipv1 ->
+                 case Data.ByteString.Lazy.getContents2
+                        ipv1
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 (# ipv2,
+                    case ipv3 of wild {
+                      Data.ByteString.Lazy.Internal.Empty
+                      -> case Lib.parseTrip4 of wild1 {
+                           Data.Attoparsec.ByteString.Lazy.Fail ipv4 ipv5 ipv6
+                           -> GHC.Base.Nothing @ Datas.Trip
+                           Data.Attoparsec.ByteString.Lazy.Done ds v -> Lib.$w$j v }
+                      Data.ByteString.Lazy.Internal.Chunk dt dt1 dt2 dt3 xs
+                      -> case Data.Attoparsec.ByteString.Lazy.parse_go
+                                @ Data.Aeson.Types.Internal.Value
+                                (Data.Aeson.Parser.Internal.$wjsonEOF
+                                   @ Data.Aeson.Types.Internal.Value
+                                   dt
+                                   dt1
+                                   dt2
+                                   dt3
+                                   dt3
+                                   0#
+                                   0#
+                                   Data.Attoparsec.Internal.Types.Incomplete
+                                   (Data.Attoparsec.ByteString.Internal.failK
+                                      @ Data.Aeson.Types.Internal.Value)
+                                     `cast`
+                                   (Sub (Sym (Data.Attoparsec.Internal.Types.D:R:StateByteString[0]))
+                                    ->_R <Data.Attoparsec.Internal.Types.Pos
+                                          -> Data.Attoparsec.Internal.Types.More
+                                          -> [GHC.Base.String]
+                                          -> GHC.Base.String
+                                          -> Data.Attoparsec.Internal.Types.IResult
+                                               Data.ByteString.Internal.ByteString
+                                               Data.Aeson.Types.Internal.Value>_R)
+                                   (Data.Attoparsec.ByteString.Internal.successK
+                                      @ Data.Aeson.Types.Internal.Value)
+                                     `cast`
+                                   (Sub (Sym (Data.Attoparsec.Internal.Types.D:R:StateByteString[0]))
+                                    ->_R <Data.Attoparsec.Internal.Types.Pos
+                                          -> Data.Attoparsec.Internal.Types.More
+                                          -> Data.Aeson.Types.Internal.Value
+                                          -> Data.Attoparsec.Internal.Types.IResult
+                                               Data.ByteString.Internal.ByteString
+                                               Data.Aeson.Types.Internal.Value>_R))
+                                xs of wild1 {
+                           Data.Attoparsec.ByteString.Lazy.Fail ipv4 ipv5 ipv6
+                           -> GHC.Base.Nothing @ Datas.Trip
+                           Data.Attoparsec.ByteString.Lazy.Done ds v
+                           -> Lib.$w$j v } } #) } }) -}
+c141369ef0b6bad5eff102c3417f0898
+  parseTrip2 ::
+    GHC.Generics.Rep Datas.Trip GHC.Prim.Any
+    -> Data.Aeson.Types.Internal.Result Datas.Trip
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: (\ (a2 :: GHC.Generics.Rep Datas.Trip GHC.Prim.Any) ->
+                 Data.Aeson.Types.Internal.Success
+                   @ Datas.Trip
+                   (Datas.$fFromJSONTrip_$cto @ GHC.Prim.Any a2)) -}
+13b0968501d6c31c77c632a9c0de0b0d
+  parseTrip3 ::
+    Data.Aeson.Types.Internal.JSONPath
+    -> GHC.Base.String -> Data.Aeson.Types.Internal.Result Datas.Trip
+  {- Arity: 2, HasNoCafRefs,
+     Unfolding: (\ (ds :: Data.Aeson.Types.Internal.JSONPath)
+                   (eta :: GHC.Base.String) ->
+                 Data.Aeson.Types.Internal.Error @ Datas.Trip eta) -}
+75d6b57c55affc85800d5f6a5a4eaf9e
+  parseTrip4 ::
+    Data.Attoparsec.ByteString.Lazy.Result
+      Data.Aeson.Types.Internal.Value
+  {- Unfolding: (Data.Attoparsec.ByteString.Lazy.parse_$sgo
+                   @ Data.Aeson.Types.Internal.Value
+                   Lib.parseTrip5) -}
+74e5255d24bb45677d6f9309d4294f89
+  parseTrip5 ::
+    Data.Attoparsec.Internal.Types.IResult
+      Data.ByteString.Internal.ByteString Data.Aeson.Types.Internal.Value
+  {- Unfolding: (Data.Aeson.Parser.Internal.$wjsonEOF
+                   @ Data.Aeson.Types.Internal.Value
+                   __NULL
+                   Data.ByteString.Internal.$fMonoidByteString3
+                   0#
+                   0#
+                   0#
+                   0#
+                   0#
+                   Data.Attoparsec.Internal.Types.Incomplete
+                   (Data.Attoparsec.ByteString.Internal.failK
+                      @ Data.Aeson.Types.Internal.Value)
+                     `cast`
+                   (Sub (Sym (Data.Attoparsec.Internal.Types.D:R:StateByteString[0]))
+                    ->_R <Data.Attoparsec.Internal.Types.Pos
+                          -> Data.Attoparsec.Internal.Types.More
+                          -> [GHC.Base.String]
+                          -> GHC.Base.String
+                          -> Data.Attoparsec.Internal.Types.IResult
+                               Data.ByteString.Internal.ByteString
+                               Data.Aeson.Types.Internal.Value>_R)
+                   (Data.Attoparsec.ByteString.Internal.successK
+                      @ Data.Aeson.Types.Internal.Value)
+                     `cast`
+                   (Sub (Sym (Data.Attoparsec.Internal.Types.D:R:StateByteString[0]))
+                    ->_R <Data.Attoparsec.Internal.Types.Pos
+                          -> Data.Attoparsec.Internal.Types.More
+                          -> Data.Aeson.Types.Internal.Value
+                          -> Data.Attoparsec.Internal.Types.IResult
+                               Data.ByteString.Internal.ByteString
+                               Data.Aeson.Types.Internal.Value>_R)) -}
+f2a5bfedd571f7da1688407a74715cec
+  replace :: GHC.Classes.Eq a => a -> a -> [a] -> [a]
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A)><L,U><L,U><S,1*U>,
+     Unfolding: InlineRule (4, True, False)
+                (\ @ a ($dEq :: GHC.Classes.Eq a) (x :: a) (y :: a) (eta :: [a]) ->
+                 GHC.Base.build
+                   @ a
+                   (\ @ b1 (c :: a -> b1 -> b1)[OneShot] (n :: b1)[OneShot] ->
+                    GHC.Base.foldr
+                      @ a
+                      @ b1
+                      (GHC.Base.mapFB
+                         @ a
+                         @ b1
+                         @ a
+                         c
+                         (\ (z :: a) ->
+                          case GHC.Classes.== @ a $dEq z x of wild {
+                            GHC.Types.False -> z GHC.Types.True -> y }))
+                      n
+                      eta)) -}
+41abbd8cfce71438e66d9d2b4cfbf2d4
+  toRadians :: GHC.Float.Floating f => f -> f
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(SLLLLLLLLLLLLLLLLLLLLLL),U(1*U,1*U,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A)>,
+     Unfolding: (\ @ f ($dFloating :: GHC.Float.Floating f) ->
+                 let {
+                   $dFractional :: GHC.Real.Fractional f
+                   = GHC.Float.$p1Floating @ f $dFloating
+                 } in
+                 let {
+                   $dNum :: GHC.Num.Num f = GHC.Real.$p1Fractional @ f $dFractional
+                 } in
+                 GHC.Num.*
+                   @ f
+                   $dNum
+                   (GHC.Real./
+                      @ f
+                      $dFractional
+                      (GHC.Float.pi @ f $dFloating)
+                      (GHC.Num.fromInteger @ f $dNum Lib.toRadians1))) -}
+39d0d0cc2e5118a855675d12fb7de5f0
+  toRadians1 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (180) -}
+1087bec91b20eec838026cdd37f89deb
+  tripToSpots ::
+    Datas.Trip -> Data.Map.Base.Map Datas.Spot Datas.Trip
+  {- Arity: 1, Strictness: <S(SLL),1*U(U,U,U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (trip :: Datas.Trip) ->
+                 case trip of wild { Datas.Trip ds1 ds2 ds3 ->
+                 Data.Map.Strict.fromSet
+                   @ Datas.Spot
+                   @ Datas.Trip
+                   (\ (ds :: Datas.Spot) -> wild)
+                   (Lib.$sfromList ds1) }) -}
+6925c21233efb8d1d150126f48b93bb5
+  tripToSpotsSet :: Datas.Trip -> Data.Set.Base.Set Datas.Spot
+  {- Arity: 1, Strictness: <S(SLL),1*U(1*U,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (trip :: Datas.Trip) ->
+                 case trip of wild { Datas.Trip ds1 ds2 ds3 ->
+                 Lib.$sfromList ds1 }) -}
+eaaf54da8983cc589730dc164597af34
+  tripsToSpots ::
+    [Datas.Trip] -> Data.Map.Base.Map Datas.Spot Datas.Trip
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (travTrips :: [Datas.Trip]) ->
+                 Lib.$sunions2
+                   @ Datas.Trip
+                   (Data.Map.Base.Tip @ Datas.Spot @ Datas.Trip)
+                   (GHC.Base.build
+                      @ (Data.Map.Base.Map Datas.Spot Datas.Trip)
+                      (\ @ b1
+                         (c :: Data.Map.Base.Map Datas.Spot Datas.Trip -> b1 -> b1)[OneShot]
+                         (n :: b1)[OneShot] ->
+                       GHC.Base.foldr
+                         @ Datas.Trip
+                         @ b1
+                         (GHC.Base.mapFB
+                            @ (Data.Map.Base.Map Datas.Spot Datas.Trip)
+                            @ b1
+                            @ Datas.Trip
+                            c
+                            Lib.tripToSpots)
+                         n
+                         travTrips))) -}
+6d433aeaae637c757f988f3584c53aee
+  tripsToSpotsSet :: [Datas.Trip] -> Data.Set.Base.Set Datas.Spot
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (trips :: [Datas.Trip]) ->
+                 Lib.$sunions_go5
+                   (Data.Set.Base.Tip @ Datas.Spot)
+                   (GHC.Base.build
+                      @ (Data.Set.Base.Set Datas.Spot)
+                      (\ @ b1
+                         (c :: Data.Set.Base.Set Datas.Spot -> b1 -> b1)[OneShot]
+                         (n :: b1)[OneShot] ->
+                       GHC.Base.foldr
+                         @ Datas.Trip
+                         @ b1
+                         (GHC.Base.mapFB
+                            @ (Data.Set.Base.Set Datas.Spot)
+                            @ b1
+                            @ Datas.Trip
+                            c
+                            Lib.tripToSpotsSet)
+                         n
+                         trips))) -}
+08af949617f89a0e124d5c0748ace7fd
+  writeOut ::
+    Data.Aeson.Types.ToJSON.ToJSON a =>
+    GHC.IO.FilePath -> a -> GHC.Types.IO ()
+  {- Arity: 4, Strictness: <L,1*U(A,1*C1(U),A,A)><L,U><L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Lib.writeOut1
+                  `cast`
+                (forall (a :: <*>_N).
+                 <Data.Aeson.Types.ToJSON.ToJSON a>_R
+                 ->_R <GHC.IO.FilePath>_R
+                 ->_R <a>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+9ee0be017aaa03ccc6ad422415aec6ac
+  writeOut1 ::
+    Data.Aeson.Types.ToJSON.ToJSON a =>
+    GHC.IO.FilePath
+    -> a
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 4, Strictness: <L,1*U(A,1*C1(U),A,A)><L,U><L,U><S,U>,
+     Unfolding: InlineRule (4, True, False)
+                (\ @ a
+                   ($dToJSON :: Data.Aeson.Types.ToJSON.ToJSON a)
+                   (file :: GHC.IO.FilePath)
+                   (thing :: a)
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 Data.Text.Lazy.IO.writeFile1
+                   file
+                   (Data.Aeson.Text.encodeToLazyText @ a $dToJSON thing)
+                   eta) -}
+"SPEC/Lib fromList @ Spot" [ALWAYS] forall ($dOrd :: GHC.Classes.Ord
+                                                       Datas.Spot)
+  Data.Set.Base.fromList @ Datas.Spot $dOrd = Lib.$sfromList
+"SPEC/Lib fromList @ Trip" [ALWAYS] forall ($dOrd :: GHC.Classes.Ord
+                                                       Datas.Trip)
+  Data.Set.Base.fromList @ Datas.Trip $dOrd = Lib.$sfromList1
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

@@ -1,0 +1,454 @@
+
+==================== FINAL INTERFACE ====================
+2017-12-05 08:35:32.6770722 UTC
+
+interface server-0.1.0.1-A87ge1buU3B90FB70286D6:Summary 8002
+  interface hash: 4bfdd9d84543dbf762c1ab1b039ef13b
+  ABI hash: 29566ed8eaa5394707368a9ba1937fb2
+  export-list hash: 286e85cfbb2e1f5930bced0cd539629b
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 9766933ed88226aef3cd834c59f222e8
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Summary.allWithin
+  Summary.averageOut
+  Summary.computeAverageSpot
+  Summary.emptySpot
+  Summary.ggg
+  Summary.removeSpot
+  Summary.replaceSpot
+  Summary.SpotSet
+  Summary.Spotdick
+module dependencies: Datas Lib
+package dependencies: Win32-2.3.1.1@Win32-2.3.1.1
+                      aeson-1.1.2.0@aeson-1.1.2.0-IYYaF432Hu8HQKp7no3ap1
+                      array-0.5.1.1@array-0.5.1.1
+                      attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ
+                      base-4.9.1.0
+                      base-compat-0.9.3@base-compat-0.9.3-m1TEyTenyr5nJN40TpHVj
+                      binary-0.8.3.0@binary-0.8.3.0
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0
+                      dlist-0.8.0.3@dlist-0.8.0.3-BHFBNaw8k6n9WiaUNzoXpk
+                      ghc-boot-th-8.0.2@ghc-boot-th-8.0.2 ghc-prim-0.5.0.0
+                      hashable-1.2.6.1@hashable-1.2.6.1-2ZLNuHq395GGIHwEHuqZol
+                      integer-gmp-1.0.0.1
+                      integer-logarithms-1.0.2@integer-logarithms-1.0.2-92lMiWV9mmYAwfMEYgfQ0D
+                      primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh
+                      random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog
+                      scientific-0.3.5.2@scientific-0.3.5.2-FM2NdrNTcdbCDq9wuNnhIA
+                      tagged-0.8.5@tagged-0.8.5-1mTloBSoUxv8dqUr8XBGBt
+                      template-haskell-2.11.1.0
+                      text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00
+                      time-1.6.0.1@time-1.6.0.1
+                      time-locale-compat-0.1.1.3@time-locale-compat-0.1.1.3-KZ1jqNx8uhlHjmuPPj6V1Y
+                      transformers-0.5.2.0@transformers-0.5.2.0
+                      unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-Bp9XgxjuHxcI4tFehVMDGC
+                      uuid-types-1.0.3@uuid-types-1.0.3-HQOuja9trySCcuflACyDTJ
+                      vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ
+orphans: attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ:Data.Attoparsec.ByteString.Char8
+         attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ:Data.Attoparsec.Text.Internal
+         base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         hashable-1.2.6.1@hashable-1.2.6.1-2ZLNuHq395GGIHwEHuqZol:Data.Hashable.Generic
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Show
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Fusion.Bundle
+         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed
+family instance modules: attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ:Data.Attoparsec.Internal.Types
+                         base-4.9.1.0:Control.Applicative base-4.9.1.0:Data.Complex
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Compose
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.Functor.Product base-4.9.1.0:Data.Functor.Sum
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         dlist-0.8.0.3@dlist-0.8.0.3-BHFBNaw8k6n9WiaUNzoXpk:Data.DList
+                         ghc-boot-th-8.0.2@ghc-boot-th-8.0.2:GHC.LanguageExtensions.Type
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Control.Monad.Primitive
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Data.Primitive.Array
+                         server-0.1.0.1-A87ge1buU3B90FB70286D6:Datas
+                         tagged-0.8.5@tagged-0.8.5-1mTloBSoUxv8dqUr8XBGBt:Data.Tagged
+                         template-haskell-2.11.1.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+                         unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-Bp9XgxjuHxcI4tFehVMDGC:Data.HashMap.Base
+                         unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-Bp9XgxjuHxcI4tFehVMDGC:Data.HashSet
+                         uuid-types-1.0.3@uuid-types-1.0.3-HQOuja9trySCcuflACyDTJ:Data.UUID.Types.Internal
+                         uuid-types-1.0.3@uuid-types-1.0.3-HQOuja9trySCcuflACyDTJ:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Primitive
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Storable
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed.Base
+import  -/  base-4.9.1.0:Data.Foldable 254e836c2d813d34e47feb29bb8d40ed
+import  -/  base-4.9.1.0:Data.List 7349774f430841349c90dfd1144aea97
+import  -/  base-4.9.1.0:Data.OldList c9282ee91951bdcbd918d2960562c007
+import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
+import  -/  base-4.9.1.0:GHC.Err 20faef8829fd13c027d0ee2213637534
+import  -/  base-4.9.1.0:GHC.List d11eb227c1c6fbfd89bb781d72eaea0d
+import  -/  base-4.9.1.0:GHC.Num 38b8aac8807c096c7f3ca3c1eff02939
+import  -/  base-4.9.1.0:GHC.Real b88ae4a48c079652623073a5bbf5c9b0
+import  -/  base-4.9.1.0:GHC.Show eca5834daba3b6a2bbbe64ab52056707
+import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
+import  -/  base-4.9.1.0:System.IO 5daf3f384209c11d9566e3409af8ec5d
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base dfcca0a6b3fe956067f7db6df4d400c2
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Map.Strict 5978345e8d03c94ea37df1bd4052990d
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Set 3ed2324fd1e757464a8ac2b636a64e5a
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base 7066127ea77dde3a5a3f19fd2ed3d39a
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+import  -/  random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog:System.Random 4c90117f915e12291e0c5f588320bf66
+import  -/  Datas be98e238c7a6e3054e3142e3d6e93b2b
+  exports: 67e6caa11e5e8dd4dfd817c985152735
+  Distance 7323848740c19bfe12b610acaabb9b48
+  Spot a271369bf1b83cfab84cf94e04011343
+  Spot 07d2863127f3528fee4141577492e659
+  Trip 07d2863127f3528fee4141577492e659
+  coords e8372a2967ec343a29f6812f49c9b82d
+  dist 3029a53f821ce25bfb135365f459307a
+  extremes c3e354a484cedb1889885f934f4ad628
+  index 4262363719017304e041dbd2ad593256
+  lat 1b37556868e5c85e0e8ca100c80f5bf8
+  lng eac17483c4668274bec7938f5eac7660
+  sources 57902b33d8996075102cb8d353db2917
+  speed d570bfe6c57e8dc63e6dd8dc4cdc0ee5
+  tripInfo 89cec2bf0f75133eb48029bbf9fb2d3a
+import  -/  Lib 87028ea10753ca019156ef89590c2c0c
+  exports: 7c64fc0293da304c2b13076cf61c9f36
+  distanceSpot 63a625e4990d7cb4b51d5a1c418c0b13
+  replace f2a5bfedd571f7da1688407a74715cec
+571b8a2e04c0465430258cd747e07cdc
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Summary.$trModule2
+                   Summary.$trModule1) -}
+3747fbdc34265c95081d065cb2c9b681
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Summary"#) -}
+62bdadab01316ecc7f9ce68e07cd14b5
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "server-0.1.0.1-A87ge1buU3B90FB70286D6"#) -}
+b0dbe167b196d2d8d28c29b7804e3515
+  $w$sgo1 ::
+    [Datas.Spot]
+    -> GHC.Base.String
+    -> GHC.Base.String
+    -> Data.Set.Base.Set Datas.Trip
+    -> Data.Set.Base.Set Datas.Trip
+  {- Arity: 4, Strictness: <L,U><L,U><L,U><S,1*U>, Inline: [0] -}
+4bfbf2a1f40b54972b70e9ff4fad0edf
+  $w$sgo10 ::
+    GHC.Types.Double
+    -> GHC.Types.Double
+    -> GHC.Types.Int
+    -> GHC.Base.Maybe (GHC.Types.Int, GHC.Types.Double)
+    -> Data.Map.Base.Map Datas.Spot a1
+    -> Data.Map.Base.Map Datas.Spot a1
+  {- Arity: 5, Strictness: <L,U(U)><L,U(U)><L,U(U)><L,U><S,1*U>,
+     Inline: [0] -}
+d34fd7b80ec6bb1b2b7e008c1a7a533f
+  $w$sgo5 ::
+    [Datas.Spot]
+    -> GHC.Base.String
+    -> GHC.Base.String
+    -> Data.Set.Base.Set Datas.Trip
+    -> Data.Set.Base.Set Datas.Trip
+  {- Arity: 4, Strictness: <L,U><L,U><L,U><S,1*U>, Inline: [0] -}
+b957d84e4163cfa5fe61d65407e131a8
+  $wcomputeAverageSpot ::
+    Summary.Spotdick -> (# Datas.Spot, Data.Set.Base.Set Datas.Trip #)
+  {- Arity: 1, Strictness: <S,1*U>, Inline: [0],
+     Unfolding: (\ (w :: Summary.Spotdick) ->
+                 case w of wild {
+                   Data.Map.Base.Bin dt ds1 ds2 ds3 ds4
+                   -> case Summary.computeAverageSpot_go10
+                             (GHC.List.badHead @ (Datas.Spot, Datas.Trip))
+                             wild of ww { (,) ww1 ww2 ->
+                      case ww1 of ww3 { Datas.Spot ww4 ww5 ww6 ww7 ww8 ww9 ww10 ww11 ->
+                      Summary.$wgo10
+                        (Datas.Spot
+                           ww4
+                           ww5
+                           ww6
+                           ww7
+                           ww8
+                           (GHC.Base.Just @ (GHC.Types.Double, GHC.Types.Double) (ww5, ww5))
+                           Summary.computeAverageSpot2
+                           ww11)
+                        (case ww2 of dt1 { Datas.Trip ipv ipv1 ipv2 ->
+                         Data.Set.Base.Bin
+                           @ Datas.Trip
+                           1#
+                           dt1
+                           (Data.Set.Base.Tip @ Datas.Trip)
+                           (Data.Set.Base.Tip @ Datas.Trip) })
+                        (Summary.$w$sgo10 @ Datas.Trip ww4 ww6 ww8 ww11 wild) } }
+                   Data.Map.Base.Tip
+                   -> case Summary.computeAverageSpot1
+                      ret_ty (# Datas.Spot, Data.Set.Base.Set Datas.Trip #)
+                      of {} }) -}
+668a40dc2b0c1711d0e59db739101f2f
+  $wggg ::
+    Datas.Spot
+    -> Datas.Distance
+    -> Data.Set.Base.Set Datas.Trip
+    -> Summary.Spotdick
+    -> (# Datas.Spot, Summary.Spotdick, Data.Set.Base.Set Datas.Trip #)
+  {- Arity: 4,
+     Strictness: <L,U(U(U),U(U),U(U),U(U),U(U),U,U,U)><L,U(U)><L,1*U><L,1*U>,
+     Inline: [0] -}
+cf2a73da7bb8cba0e867a3982c18ab80
+  $wgo10 ::
+    Datas.Spot
+    -> Data.Set.Base.Set Datas.Trip
+    -> Data.Map.Base.Map Datas.Spot Datas.Trip
+    -> (# Datas.Spot, Data.Set.Base.Set Datas.Trip #)
+  {- Arity: 3, Strictness: <L,U><L,U><S,1*U>, Inline: [0] -}
+056448d273957aa7d77607f1dda361f2
+  $wreplaceSpot ::
+    Datas.Spot
+    -> Datas.Spot
+    -> [Datas.Spot]
+    -> GHC.Base.String
+    -> GHC.Base.String
+    -> (# [Datas.Spot], GHC.Base.String, GHC.Base.String #)
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <L,U(U(U),U(U),U(U),U(U),U(U),U,U,U)><L,U><L,1*U><L,U><L,U>,
+     Inline: [0],
+     Unfolding: (\ (w :: Datas.Spot)
+                   (w1 :: Datas.Spot)
+                   (ww :: [Datas.Spot])
+                   (ww1 :: GHC.Base.String)
+                   (ww2 :: GHC.Base.String) ->
+                 (# GHC.Base.map
+                      @ Datas.Spot
+                      @ Datas.Spot
+                      (\ (z :: Datas.Spot) ->
+                       case z of ww3 { Datas.Spot ww4 ww5 ww6 ww7 ww8 ww9 ww10 ww11 ->
+                       case ww4 of ww12 { GHC.Types.D# ww13 ->
+                       case w of ww14 { Datas.Spot ww15 ww16 ww17 ww18 ww19 ww20 ww21 ww22 ->
+                       case ww15 of ww23 { GHC.Types.D# ww24 ->
+                       case Datas.$w$c==1
+                              ww13
+                              ww5
+                              ww6
+                              ww7
+                              ww8
+                              ww9
+                              ww10
+                              ww11
+                              ww24
+                              ww16
+                              ww17
+                              ww18
+                              ww19
+                              ww20
+                              ww21
+                              ww22 of wild {
+                         GHC.Types.False -> ww3 GHC.Types.True -> w1 } } } } })
+                      ww,
+                    ww1, ww2 #)) -}
+7a3216fcd03fce263dfe25713dedc00a
+  type SpotSet = Data.Set.Base.Set Datas.Spot
+a864ba2fc0d8674b6e8462791bf5a2f8
+  type Spotdick = Data.Map.Base.Map Datas.Spot Datas.Trip
+74d5c75b5cb08c4b3f54c49f92ef7b80
+  allWithin ::
+    Summary.Spotdick
+    -> Datas.Spot -> Datas.Distance -> Summary.Spotdick
+  {- Arity: 3,
+     Strictness: <S,1*U><L,U(U(U),A,U(U),A,A,A,A,A)><L,U(U)>,
+     Unfolding: (\ (dic :: Summary.Spotdick)
+                   (spot :: Datas.Spot)
+                   (d :: Datas.Distance) ->
+                 Data.Map.Base.filterWithKey
+                   @ Datas.Spot
+                   @ Datas.Trip
+                   (\ (s :: Datas.Spot) (ds :: Datas.Trip)[OneShot] ->
+                    case s of ww { Datas.Spot ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww8 ->
+                    case ww1 of ww9 { GHC.Types.D# ww10 ->
+                    case ww3 of ww11 { GHC.Types.D# ww12 ->
+                    case spot of ww13 { Datas.Spot ww14 ww15 ww16 ww17 ww18 ww19 ww20 ww21 ->
+                    case ww14 of ww22 { GHC.Types.D# ww23 ->
+                    case ww16 of ww24 { GHC.Types.D# ww25 ->
+                    let {
+                      x :: GHC.Prim.Double#
+                      = GHC.Prim.sinDouble#
+                          (GHC.Prim./##
+                             (GHC.Prim.-##
+                                (GHC.Prim.*## 1.7453292519943295e-2## ww25)
+                                (GHC.Prim.*## 1.7453292519943295e-2## ww12))
+                             2.0##)
+                    } in
+                    let {
+                      y :: GHC.Prim.Double# = GHC.Prim.*## 1.7453292519943295e-2## ww10
+                    } in
+                    let {
+                      x1 :: GHC.Prim.Double# = GHC.Prim.*## 1.7453292519943295e-2## ww23
+                    } in
+                    let {
+                      x2 :: GHC.Prim.Double#
+                      = GHC.Prim.sinDouble# (GHC.Prim./## (GHC.Prim.-## x1 y) 2.0##)
+                    } in
+                    let {
+                      y1 :: GHC.Prim.Double#
+                      = GHC.Prim.+##
+                          (GHC.Prim.*## x2 x2)
+                          (GHC.Prim.*##
+                             (GHC.Prim.*## (GHC.Prim.cosDouble# y) (GHC.Prim.cosDouble# x1))
+                             (GHC.Prim.*## x x))
+                    } in
+                    case GHC.Float.$fRealFloatDouble_$s$w$catan2
+                           (GHC.Prim.**## (GHC.Prim.-## 1.0## y1) 0.5##)
+                           (GHC.Prim.**## y1 0.5##) of ww26 { DEFAULT ->
+                    case d of wild1 { GHC.Types.D# y2 ->
+                    GHC.Prim.tagToEnum#
+                      @ GHC.Types.Bool
+                      (GHC.Prim.<##
+                         (GHC.Prim.*## 6378700.0## (GHC.Prim.+## ww26 ww26))
+                         y2) } } } } } } } })
+                   dic) -}
+4aaa2815775aba13637b000d499d5b2c
+  averageOut ::
+    Summary.Spotdick
+    -> Datas.Distance
+    -> Data.Set.Base.Set Datas.Trip
+    -> GHC.Types.IO (Data.Set.Base.Set Datas.Trip)
+  {- Arity: 4, Strictness: <S,1*U><L,U(U)><L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Summary.averageOut1
+                  `cast`
+                (<Summary.Spotdick>_R
+                 ->_R <Datas.Distance>_R
+                 ->_R <Data.Set.Base.Set Datas.Trip>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <Data.Set.Base.Set Datas.Trip>_R)) -}
+1ce56f10c5dc4e2b111eedc7d91ff13f
+  averageOut1 ::
+    Summary.Spotdick
+    -> Datas.Distance
+    -> Data.Set.Base.Set Datas.Trip
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Set.Base.Set Datas.Trip #)
+  {- Arity: 4, Strictness: <S,1*U><L,U(U)><L,U><S,U> -}
+acce7a3d0bbe89a401fb134c3e9544c2
+  computeAverageSpot ::
+    Summary.Spotdick -> (Datas.Spot, Data.Set.Base.Set Datas.Trip)
+  {- Arity: 1, Strictness: <S,1*U>m, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Summary.Spotdick) ->
+                 case Summary.$wcomputeAverageSpot w of ww { (#,#) ww1 ww2 ->
+                 (ww1, ww2) }) -}
+c2a7efa09db7ae7511123508f379a7dd
+  computeAverageSpot1 :: (Datas.Spot, Data.Set.Base.Set Datas.Trip)
+  {- Strictness: x -}
+b2416a9dcd72da6bf8e9f0f00d742afb
+  computeAverageSpot2 ::
+    GHC.Base.Maybe (GHC.Types.Int, GHC.Types.Int)
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Base.Just
+                   @ (GHC.Types.Int, GHC.Types.Int)
+                   Summary.computeAverageSpot3) -}
+83e30aedd63d786e8bcac47b44ebbd53
+  computeAverageSpot3 :: (GHC.Types.Int, GHC.Types.Int)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: ((Summary.computeAverageSpot4,
+                  Summary.computeAverageSpot4)) -}
+d255694ec5826bf59ca445a149abb278
+  computeAverageSpot4 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 1#) -}
+f54ba100d0533542af24b7a97aff45ad
+  computeAverageSpot_go10 ::
+    (Datas.Spot, Datas.Trip)
+    -> Data.Map.Base.Map Datas.Spot Datas.Trip
+    -> (Datas.Spot, Datas.Trip)
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U(U,U)><S,1*U> -}
+84fd015eb41f0660f68b5c8bbaa3957c
+  emptySpot :: Datas.Spot
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (Datas.Spot
+                   Summary.emptySpot2
+                   Summary.emptySpot2
+                   Summary.emptySpot2
+                   Summary.emptySpot2
+                   Summary.emptySpot1
+                   (GHC.Base.Nothing @ (GHC.Types.Double, GHC.Types.Double))
+                   (GHC.Base.Nothing @ (GHC.Types.Int, GHC.Types.Int))
+                   (GHC.Base.Nothing @ (GHC.Types.Int, GHC.Types.Double))) -}
+14aa8e850f91b405863fec9645744e56
+  emptySpot1 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+51894d17be2480d3661cc1ea6d7c6e2b
+  emptySpot2 :: GHC.Types.Double
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.D# 0.0##) -}
+85fa1a95e55effdc1c840992a3bbd3cb
+  ggg ::
+    Datas.Spot
+    -> Datas.Distance
+    -> Data.Set.Base.Set Datas.Trip
+    -> Summary.Spotdick
+    -> (Datas.Spot, Summary.Spotdick, Data.Set.Base.Set Datas.Trip)
+  {- Arity: 4,
+     Strictness: <L,U(U(U),U(U),U(U),U(U),U(U),U,U,U)><L,U(U)><L,1*U><L,1*U>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (4, True, False)
+                (\ (w :: Datas.Spot)
+                   (w1 :: Datas.Distance)
+                   (w2 :: Data.Set.Base.Set Datas.Trip)
+                   (w3 :: Summary.Spotdick) ->
+                 case Summary.$wggg w w1 w2 w3 of ww { (#,,#) ww1 ww2 ww3 ->
+                 (ww1, ww2, ww3) }) -}
+489ae6f45f9ad4a59bf74a796d89bdfc
+  removeSpot :: Datas.Spot -> Datas.Trip -> Datas.Trip
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U(1*U,U,U)>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ (s :: Datas.Spot) (t :: Datas.Trip) ->
+                 case t of wild { Datas.Trip ds ds1 ds2 ->
+                 Datas.Trip
+                   (Data.OldList.deleteBy @ Datas.Spot Datas.$fEqSpot_$c== s ds)
+                   ds1
+                   ds2 }) -}
+c24d28eb7cc0cd5d4454a1f189f62fb8
+  replaceSpot :: Datas.Spot -> Datas.Spot -> Datas.Trip -> Datas.Trip
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(U(U),U(U),U(U),U(U),U(U),U,U,U)><L,U><S,1*U(1*U,U,U)>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: Datas.Spot) (w1 :: Datas.Spot) (w2 :: Datas.Trip) ->
+                 case w2 of ww { Datas.Trip ww1 ww2 ww3 ->
+                 case Summary.$wreplaceSpot
+                        w
+                        w1
+                        ww1
+                        ww2
+                        ww3 of ww4 { (#,,#) ww5 ww6 ww7 ->
+                 Datas.Trip ww5 ww6 ww7 } }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+
